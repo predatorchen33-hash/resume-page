@@ -10,109 +10,77 @@
   body { font-family: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif; background: #f0f0f0; }
   .page {
     width: 210mm; min-height: 297mm; margin: 20px auto; background: #fff;
-    padding: 32px 36px; color: #1a1a1a; font-size: 11.5px; line-height: 1.7;
+    padding: 28px 34px; color: #1a1a1a; font-size: 11px; line-height: 1.65;
   }
-  @media print { body { background: #fff; } .page { margin: 0; padding: 28px 32px; box-shadow: none; } }
+  @media print { body { background: #fff; } .page { margin: 0; padding: 24px 30px; box-shadow: none; } }
 
-  /* 头部 */
-  .header { text-align: center; margin-bottom: 16px; }
-  .header h1 { font-size: 22px; font-weight: 700; letter-spacing: 2px; margin-bottom: 6px; }
-  .header .contact { font-size: 11px; color: #444; }
-  .header .contact span { margin: 0 8px; }
-  .header .intent { font-size: 11px; color: #666; margin-top: 2px; }
+  .header { text-align: center; margin-bottom: 12px; }
+  .header h1 { font-size: 20px; font-weight: 700; letter-spacing: 2px; margin-bottom: 4px; }
+  .header .contact { font-size: 10.5px; color: #444; }
+  .header .contact span { margin: 0 6px; }
+  .header .intent { font-size: 10.5px; color: #666; margin-top: 2px; }
 
-  /* 分割线 */
-  .divider { border: none; border-top: 1.5px solid #1a1a1a; margin: 12px 0 10px; }
-  .divider-light { border: none; border-top: 0.5px solid #ccc; margin: 8px 0; }
+  hr.divider { border: none; border-top: 1.5px solid #1a1a1a; margin: 10px 0 8px; }
+  hr.light { border: none; border-top: 0.5px solid #ddd; margin: 7px 0; }
 
-  /* 章节标题 */
-  .section-title { font-size: 13px; font-weight: 700; margin-bottom: 8px; }
+  .sec-title { font-size: 12.5px; font-weight: 700; margin-bottom: 6px; }
 
-  /* 通用行 */
   .row { display: flex; justify-content: space-between; align-items: baseline; }
-  .row .left { font-weight: 600; font-size: 11.5px; }
-  .row .right { font-size: 11px; color: #444; white-space: nowrap; }
+  .row .l { font-weight: 600; font-size: 11px; }
+  .row .r { font-size: 10.5px; color: #444; white-space: nowrap; }
 
-  /* 子信息 */
-  .sub { color: #555; font-size: 11px; margin-left: 4px; padding-left: 0; }
-  .sub li { list-style: none; position: relative; padding-left: 10px; margin-bottom: 1px; }
-  .sub li::before { content: "•"; position: absolute; left: 0; color: #999; }
+  .desc { font-size: 10.5px; color: #555; margin: 1px 0 4px; }
 
-  /* 工作经历 */
-  .company-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
-  .company-row .name { font-weight: 700; font-size: 12px; }
-  .company-row .date { font-size: 11px; color: #444; }
-  .company-desc { font-size: 11px; color: #555; margin-bottom: 6px; }
+  .proj-title { font-weight: 700; font-size: 11px; margin: 7px 0 1px; }
+  .proj-sub { font-weight: 600; font-size: 10.5px; margin: 5px 0 1px; }
 
-  .project-title { font-weight: 700; font-size: 11.5px; margin: 8px 0 2px; }
-  .project-desc { font-size: 11px; color: #555; margin-bottom: 4px; }
-  .project-sub { font-size: 11px; color: #1a1a1a; }
+  ul.items { padding-left: 2px; }
+  ul.items > li { list-style: none; position: relative; padding-left: 9px; margin-bottom: 2px; font-size: 10.5px; line-height: 1.6; }
+  ul.items > li::before { content: "•"; position: absolute; left: 0; color: #333; font-weight: 700; }
 
-  /* 项目内容列表 */
-  .items { padding-left: 4px; }
-  .items > li { list-style: none; position: relative; padding-left: 10px; margin-bottom: 3px; font-size: 11px; line-height: 1.65; }
-  .items > li::before { content: "•"; position: absolute; left: 0; color: #333; font-weight: 700; }
-  .items .sub-items { padding-left: 12px; margin-top: 1px; }
-  .items .sub-items li { list-style: none; position: relative; padding-left: 10px; margin-bottom: 2px; font-size: 10.5px; line-height: 1.6; }
-  .items .sub-items li::before { content: "-"; position: absolute; left: 0; color: #888; }
+  ul.sub { padding-left: 12px; margin-top: 1px; }
+  ul.sub > li { list-style: none; position: relative; padding-left: 9px; margin-bottom: 1px; font-size: 10px; line-height: 1.55; }
+  ul.sub > li::before { content: "-"; position: absolute; left: 0; color: #888; }
 
-  .result { font-weight: 700; font-size: 11px; margin-top: 2px; padding-left: 10px; }
+  .result { font-weight: 700; font-size: 10.5px; margin: 2px 0 0 9px; }
 
-  /* 其他模块 */
-  .other-title { font-weight: 700; font-size: 11px; display: inline; }
+  .other-label { font-weight: 700; font-size: 10.5px; }
 
-  /* 技能 */
-  .skills li { list-style: none; font-size: 11px; line-height: 1.7; }
+  ul.skills { padding-left: 2px; }
+  ul.skills li { list-style: none; font-size: 10.5px; line-height: 1.65; padding-left: 9px; position: relative; }
+  ul.skills li::before { content: "•"; position: absolute; left: 0; color: #999; }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <!-- 头部 -->
   <div class="header">
     <h1>陈语桐</h1>
-    <div class="contact">
-      <span>+86 186 4610 7317</span>|<span>1312635419@qq.com</span>
-    </div>
+    <div class="contact"><span>+86 186 4610 7317</span>|<span>1312635419@qq.com</span></div>
     <div class="intent">求职意向：产品经理</div>
   </div>
 
-  <!-- 教育经历 -->
   <hr class="divider">
-  <div class="section-title">教育经历</div>
-
-  <div class="row">
-    <div class="left">香港中文大学（深圳）　通信工程理学硕士</div>
-    <div class="right">2023.09 - 2025.07</div>
-  </div>
-  <ul class="sub"><li>GPA：3.4/4.0</li></ul>
-
-  <div class="row" style="margin-top:6px;">
-    <div class="left">北京邮电大学　电信工程及管理　本科</div>
-    <div class="right">2019.09 - 2023.07</div>
-  </div>
-  <ul class="sub">
+  <div class="sec-title">教育经历</div>
+  <div class="row"><div class="l">香港中文大学（深圳）　通信工程理学硕士</div><div class="r">2023.09 - 2025.07</div></div>
+  <ul class="items"><li>GPA：3.4/4.0</li></ul>
+  <div class="row" style="margin-top:4px;"><div class="l">北京邮电大学　电信工程及管理　本科</div><div class="r">2019.09 - 2023.07</div></div>
+  <ul class="items">
     <li>GPA：81.26/100 | 校级二等奖学金</li>
     <li>交流经历：2021年1-2月新加坡南洋理工大学信号与系统项目，获Distinction</li>
   </ul>
 
-  <!-- 工作经历 -->
   <hr class="divider">
-  <div class="section-title">工作经历</div>
+  <div class="sec-title">工作经历</div>
+  <div class="row"><div class="l">小米 — 手机部·软件部·OS规划 | 软件产品经理</div><div class="r">2025.08 - 至今</div></div>
+  <div class="desc">负责多款机型软件产品规划，覆盖从卖点定义到交付落地的全流程。</div>
 
-  <div class="company-row">
-    <div class="name">小米 — 手机部·软件部·OS规划 | 软件产品经理</div>
-    <div class="date">2025.08 - 至今</div>
-  </div>
-  <div class="company-desc">负责多款机型软件产品规划，覆盖从卖点定义到交付落地的全流程。</div>
-
-  <!-- 项目一 -->
-  <div class="project-title">项目一：AI手机</div>
-  <div class="project-desc">与头部AI厂商合作，用合作方AI助手替换系统原有助手，涉及20+子需求。作为小米侧核心PM，负责能力边界定义与跨公司方案对齐。</div>
+  <div class="proj-title">项目一：AI手机</div>
+  <div class="desc">与头部AI厂商合作，用合作方AI助手替换系统原有助手，涉及20+子需求。作为小米侧核心PM，负责能力边界定义与跨公司方案对齐。</div>
   <ul class="items">
     <li>能力边界定义：
-      <ul class="sub-items">
-        <li>Intent：为定义AI助手在手机系统上的能力边界，整合设置/一方应用/IoT三大模块约800条能力全集，排定厂包/OTA优先级，协调10+业务方锁定需求</li>
+      <ul class="sub">
+        <li>Intent/Function Call：为定义AI Agent可调用的工具范围，整合设置/一方应用/IoT三大模块约800条Function Call，排定厂包/OTA分发优先级，协调10+业务方锁定需求</li>
         <li>安全防护：为防止AI Agent误操作用户敏感数据，锚定4大类60项敏感操作并设计拦截点位，通过评审并全部完成适配</li>
         <li>IoT策略：为平衡IoT语控用户体验与数据资产安全，定义能力和使用场景范围和边界，设计授权流程，避免核心数据资产通过接口泄露</li>
       </ul>
@@ -121,14 +89,13 @@
   </ul>
   <div class="result">已交付全部厂包和OTA1需求</div>
 
-  <hr class="divider-light">
+  <hr class="light">
 
-  <!-- 项目二 -->
-  <div class="project-title">项目二：软硬融合产品线</div>
-  <div class="project-desc">承接硬件差异化需求，将硬件能力翻译为用户可感知的软件体验方案，拉通设计/研发/测试多方交付。</div>
+  <div class="proj-title">项目二：软硬融合产品线</div>
+  <div class="desc">承接硬件差异化需求，将硬件能力翻译为用户可感知的软件体验方案，拉通设计/研发/测试多方交付。</div>
 
-  <div class="project-sub" style="font-weight:600; margin-top:6px;">Redmi K90 Max — 主动散热风扇</div>
-  <div class="project-desc">小米首款内置散热风扇手机，靶心用户为重度手游玩家，需通过软件策略解决K系列连续两代发热NPS贬损Top1的问题。</div>
+  <div class="proj-sub">Redmi K90 Max — 主动散热风扇</div>
+  <div class="desc">小米首款内置散热风扇手机，靶心用户为重度手游玩家，需通过软件策略解决K系列连续两代发热NPS贬损Top1的问题。</div>
   <ul class="items">
     <li>策略设计：拆解OPPO/荣耀/红魔等竞品，明确差异化打法，设计3档模式覆盖5大发热场景，定义10+复合场景启停与互斥规则，拉通硬件、互部、AI等多方落地</li>
     <li>用户反馈：为优化上市前体验，主导内外部用户试用问题跟进，推动自清洁、通知等6个优化项落地</li>
@@ -136,53 +103,38 @@
   </ul>
   <div class="result">K90 Max首销刷新近一年全渠道3K-4K价位段纪录</div>
 
-  <div class="project-sub" style="font-weight:600; margin-top:6px;">Redmi Turbo 系列 — 背部灯带</div>
-  <div class="project-desc">跨3代机型迭代，面向追求潮流性能的男大学生群体，在行业首创双环灯带基础上打造软件差异化。</div>
+  <div class="proj-sub">Redmi Turbo 系列 — 背部灯带</div>
+  <div class="desc">跨3代机型迭代，面向追求潮流性能的男大学生群体，在行业首创双环灯带基础上打造软件差异化。</div>
   <ul class="items">
     <li>为站稳Turbo系列潮流标签、支撑灯带核心卖点（上代二级卖点Top2），拆解3家竞品明确差异化方向，独立输出灯带软件产品方案并协调4方落地，功能丰富度较上代提升125%，中国区日活20w+</li>
   </ul>
   <div class="result">Turbo 5 Max发布2小时刷新2K-3K价位段首销纪录</div>
 
-  <hr class="divider-light">
+  <hr class="light">
 
-  <!-- 其他 -->
-  <div class="project-title">其他</div>
+  <div class="proj-title">其他</div>
   <ul class="items">
-    <li><span class="other-title">AI开发：</span>为端侧大模型明星场景提供前置验证，通过Vibe Coding独立开发多个功能原型demo，支撑方案评审与内部汇报演示</li>
-    <li><span class="other-title">用户研究：</span>二次元+学习成长者用户专项：设计访谈大纲，完成多轮深度访谈，输出人群画像→用机特征→痛点洞察，为新机卖点规划提供前置输入</li>
+    <li><span class="other-label">AI场景探索：</span>为验证端侧大模型明星场景的产品可行性，独立完成从场景定义→交互设计→原型开发→效果验证的全链路，通过Vibe Coding产出AI助手、深度伴随等多个可演示原型，直接支撑卖点方案决策</li>
+    <li><span class="other-label">用户研究：</span>二次元+学习成长者用户专项：设计访谈大纲，完成多轮深度访谈，输出人群画像→用机特征→痛点洞察，为新机卖点规划提供前置输入</li>
   </ul>
 
-  <!-- 实习经历 -->
   <hr class="divider">
-  <div class="section-title">实习经历</div>
+  <div class="sec-title">实习经历</div>
 
-  <div class="row">
-    <div class="left">德勤　数字化客户运营及系统咨询</div>
-    <div class="right">2024.09 - 2024.12</div>
-  </div>
+  <div class="row"><div class="l">德勤　数字化客户运营及系统咨询</div><div class="r">2024.09 - 2024.12</div></div>
+  <ul class="items"><li>为紫光同芯打造CRM客户关系管理系统，完善测试脚本并进行功能/权限测试，结合业务流程规范撰写CRM系统培训手册</li></ul>
+
+  <div class="row" style="margin-top:4px;"><div class="l">TCL鸿鹄实验室　AI产品经理</div><div class="r">2024.03 - 2024.08</div></div>
   <ul class="items">
-    <li>为紫光同芯打造CRM客户关系管理系统，完善测试脚本并进行功能/权限测试，结合业务流程规范撰写CRM系统培训手册</li>
+    <li>基于LLM为知识库管理平台迭代搜索/推荐功能，通过prompt调优将多轮对话正确率提升31%</li>
+    <li>借助coze平台搭建Agent，为内部销售设计AI考试系统，探索Agent在业务场景中的落地路径</li>
   </ul>
 
-  <div class="row" style="margin-top:6px;">
-    <div class="left">TCL鸿鹄实验室　AI产品经理</div>
-    <div class="right">2024.03 - 2024.08</div>
-  </div>
-  <ul class="items">
-    <li>基于LLM为知识库管理平台迭代搜索、商品推荐等功能，多轮对话正确率提升31%；借助coze平台搭建Agent为内部销售设计考试题</li>
-  </ul>
+  <div class="row" style="margin-top:4px;"><div class="l">联想 Consumer Portfolio Management　产品经理助理</div><div class="r">2023.04 - 2023.06</div></div>
+  <ul class="items"><li>监测联想及竞品产品数据，制作竞品分析landscape，收集Computex信息并进行总结交付</li></ul>
 
-  <div class="row" style="margin-top:6px;">
-    <div class="left">联想 Consumer Portfolio Management　产品经理助理</div>
-    <div class="right">2023.04 - 2023.06</div>
-  </div>
-  <ul class="items">
-    <li>监测联想及竞品产品数据，制作竞品分析landscape，收集Computex信息并进行总结交付</li>
-  </ul>
-
-  <!-- 技能 -->
   <hr class="divider">
-  <div class="section-title">技能及其他</div>
+  <div class="sec-title">技能及其他</div>
   <ul class="skills">
     <li>语言：英语（IELTS: 6.5 | CET-6: 529）</li>
     <li>工具：Figma、Axure、Xmind、MS Office</li>
